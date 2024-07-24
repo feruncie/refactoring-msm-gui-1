@@ -1,6 +1,5 @@
 <h1>
-  <%= @the_movie.title_with_year%> 
-  <%= @the_movie.director.name%>
+  Movie #<%= @the_movie.id %> details
 </h1>
 
 <div>
@@ -113,7 +112,11 @@
     Director
   </dt>
   <dd>
+    <% if @the_movie.director %>
     <%= @the_movie.director.name %>
+    <% else %>
+    Unkown director
+    <% end %>
   </dd>
 
   <dt>

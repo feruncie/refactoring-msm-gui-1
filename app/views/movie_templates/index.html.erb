@@ -105,7 +105,11 @@
     </td>
 
     <td>
+        <% if movie.director %>
         <%= movie.director.name %>
+        <% else %>
+        Unknown director 
+        <% end %>
     </td>
 
     <td>

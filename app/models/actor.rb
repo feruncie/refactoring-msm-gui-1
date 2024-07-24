@@ -12,8 +12,9 @@
 #
 class Actor < ApplicationRecord
 
-def characters 
-  return Character.where ({ :actor_id => self.id})
+def characters
+
+  return Character.where ({ :actor_id => id })
 end 
 
 end
